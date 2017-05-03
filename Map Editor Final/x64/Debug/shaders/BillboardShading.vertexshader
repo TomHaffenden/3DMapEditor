@@ -1,0 +1,26 @@
+#version 330 core
+
+layout(location = 0) in vec3 billboardVertices;
+
+out vec2 UV;
+
+uniform vec3 cameraRight_worldSpace;
+uniform vec3 cameraUp_worldSpace;
+uniform mat4 VP;
+uniform vec3 billboardPos;
+uniform vec2 billboardSize;
+
+void main()
+{
+	vec3 particleCenter_worldSpace = billboardPos;
+	
+	
+	vec3 vertexPosition_worldSpace = particleCenter_worldSpace +
+		cameraRight_worldSpace * billboardVertices.x * billboardSize.x +
+		cameraUp_worldSpace * billboardVertices.y * billboardSize.y;
+		
+	
+	gl_Position = VP * vec4(vertexPosition_worldSpace, 1.0f);
+	
+	UV = billboardVertices.xy + vec2(0.5f, 0.5f);
+}

@@ -1,0 +1,13 @@
+opengl-tutorial - http://www.opengl-tutorial.org/
+learnopengl - https://learnopengl.com/#!Lighting/Multiple-lights
+
+ImGui - https://github.com/ocornut/imgui
+rapidJson - https://github.com/miloyip/rapidjson
+
+Light png - http://findicons.com/files/icons/730/soft/128/tips.png
+Sun png - http://findicons.com/files/icons/474/nature/128/sun.png
+Sphere & Earth bmp - http://tf3dm.com/3d-model/planet-earth-99065.html
+Spaceship - https://www.turbosquid.com/FullPreview/Index.cfm/ID/588767
+bowling pin/ball - https://www.turbosquid.com/3d-models/bowling-set-obj-free/520062
+
+Video Music - http://www.bensound.com/royalty-free-music/track/funky-element
