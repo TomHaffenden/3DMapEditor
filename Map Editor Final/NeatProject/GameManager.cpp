@@ -13,8 +13,8 @@
 
 GameManager::GameManager()
 {
-	_screenWidth = 1280;
-	_screenHeight = 72;
+	_screenWidth = 1920;
+	_screenHeight = 1080;
 
 	int ret = InitOpenGL();
 	if (ret != 0) exit(ret);
@@ -88,7 +88,7 @@ int GameManager::InitOpenGL()
 	glfwSetCursorPos(_window, _screenWidth / 2.0f, _screenHeight / 2.0f);
 	glfwPollEvents();
 
-	glClearColor(0.0f, 0.0f, 0.4f, 0.0f);
+	glClearColor(0.11765f, 0.11765f, 0.11765f, 0.0f);
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
 	glEnable(GL_CULL_FACE);
